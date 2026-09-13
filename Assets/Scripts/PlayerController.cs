@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
         // Apply movement to the rigidbody
         rb.AddForce(movement * moveSpeed, ForceMode.Force);
+        //rb.AddForce(movement * moveSpeed, ForceMode.Acceleration);
     }
 
     void OnTriggerEnter(Collider other)
